@@ -4,6 +4,7 @@ def bemvindo():
 	print("Selecione uma Opcao")
 	print("1  Adicionar um novo contato")
 	print("2  Listar os contatos da agenda")
+	print("3  Buscar usuário pelo nome");
 
 #Funcoes do processo
 def adicionar():
@@ -23,9 +24,18 @@ def listar():
 	print("Lista de Contatos")
 	agenda = open("agendatelefonica.csv")
 	for linha in agenda:
-		partes = linha.strip().split(',');
+		partes = linha.strip().split(',')
 		print("O telefone de %s eh %s " % (partes[0], partes[1]))
 	agenda.close()
+
+def busca():
+        agenda = open("agendatelefonica.csv")
+        contato = str(input("Digite o nome do usuário: \n"));
+        for linha in agenda:
+                if(linha.startswith(contato)):
+                        print("Contato encontrado: ", linha);
+        agenda.close();
+        
 
 def falha():
 	print("Opcao Incorreta")
