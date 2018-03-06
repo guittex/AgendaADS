@@ -1,7 +1,7 @@
 #Mensagem de Bem Vindo e Opcoes ao Usuario
 def bemvindo():
 	print("Bem Vindo a Agenda")
-	print("Selecione uma Opcao")
+	print("Selecione uma Opção")
 	print("1  Adicionar um novo contato")
 	print("2  Listar os contatos da agenda")
 	print("3  Buscar usuário pelo nome");
@@ -12,7 +12,7 @@ def adicionar():
 	agenda = open("agendatelefonica.csv",'a')
 	nome = str(input("Nome do Contato:"))
 	telefone = str(input("Digite o telefone:"))
-	print("Contato salvo com nome:",nome," e numero",telefone)
+	print("Contato salvo com nome:",nome," e número",telefone)
 	agenda.write(nome)
 	agenda.write(",")
 	agenda.write(telefone)
@@ -38,4 +38,4 @@ def busca():
         
 
 def falha():
-	print("Opcao Incorreta")
+	print("Opção Incorreta")
