@@ -16,6 +16,8 @@ while n != '9':
                 funcoes.listar()
         elif opcao == 3:
                 funcoes.busca()
+        elif opcao == 4:
+                funcoes.remover()
         else:
                 funcoes.falha()
         n = str(input("Digite 9 para sair ou qualquer tecla para continuar: "))
