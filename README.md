@@ -17,7 +17,7 @@ FUNCIONAMENTO DA AGENDA
     Para continuar na agenda, digite qualquer tecla ou 9 para sair
 	
 	2 - LISTAR OS CONTATOS DA AGENDA
-	Exibe uma Lista todos os contatos salvos
+	Exibe uma Lista com todos os contatos salvos
 	Para continuar na agenda, digite qualquer tecla ou 9 para sair
 
 	3 - BUSCAR USUÁRIO PELO NOME
