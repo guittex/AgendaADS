@@ -11,9 +11,9 @@ def bemvindo():
 def adicionar():
 	print("Adicionar um registro")
 	agenda = open("agendatelefonica.csv",'a')
-	nome = str(input("Nome do Contato:"))
-	telefone = str(input("Digite o telefone:"))
-	print("Contato salvo com nome:",nome," e numero",telefone)
+	nome = str(input("Nome do Contato: "))
+	telefone = str(input("Digite o telefone: "))
+	print("Contato salvo com nome: ",nome," e numero ",telefone)
 	agenda.write(nome)
 	agenda.write(",")
 	agenda.write(telefone)
