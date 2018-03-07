@@ -43,13 +43,13 @@ def remover ():
 		lines = agenda.readlines()
 		agenda.close()
 		agenda = open("agendatelefonica.csv", "w")
-		remover = input("Digite o nome do usuario para remover")
+		remover = input("Digite o nome do usuario para remover: ")
 		for line in lines:
-				if line.find(remover) == -1:
-					agenda.write(line) 
-                          
+				if line[:(len(remover)+1)] != (remover+","):
+					agenda.write(line)
+
 		agenda.close()
-        
+
 
 def falha():
 	print("Opcao Incorreta")
