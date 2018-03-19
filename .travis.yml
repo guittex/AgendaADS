@@ -2,4 +2,4 @@ language: python
 python:
 - "3.6.2"
 script:
--    python adicionar_test.py
+-    py.test adicionar_test.py
