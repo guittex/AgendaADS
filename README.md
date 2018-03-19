@@ -1,4 +1,4 @@
-Agenda V0.1
+﻿Agenda V0.1
 ================================
 
 FUNCIONAMENTO DA AGENDA
@@ -39,3 +39,5 @@ Ultima Atualizacao 06-03-2018
 3 - Incluido funcao remover contato
 4 - Melhorar opcao 2 listar contatos da agenda
 5 - Atualizacao da README
+
+[![Build Status](https://travis-ci.org/guittex/AgendaADS.svg?branch=master)](https://travis-ci.org/guittex/AgendaADS)
