@@ -4,23 +4,28 @@ def bemvindo():
 	print("Selecione uma Opcao")
 	print("1  Adicionar um novo contato")
 	print("2  Listar os contatos da agenda")
-	print("3  Buscar usuário pelo nome");
+	print("3  Buscar usuario pelo nome")
 	print("4  Remover contato")
 
 #Funcoes do processo
-def adicionar():
-	print("Adicionar um registro")
-	agenda = open("agendatelefonica.csv",'a')
-	nome = str(input("Nome do Contato: "))
-	telefone = str(input("Digite o telefone: "))
-	print("Contato salvo com nome: ",nome," e numero ",telefone)
-	agenda.write(nome)
-	agenda.write(",")
-	agenda.write(telefone)
-	agenda.write(",")
-	agenda.write("\n")
-	agenda.close()
-
+def adicionar(nome,telefone):
+	verificador=[]
+	for i in range (0,len(telefone)):
+		verificador.append(telefone[i])
+	digitos=len(verificador)
+	if (digitos >= 8):
+		print("Contato salvo com nome: ",nome," e numero ",telefone)	
+		agenda = open("agendatelefonica.csv",'a')
+		agenda.write(nome)
+		agenda.write(",")
+		agenda.write(telefone)
+		agenda.write(",")
+		agenda.write("\n")
+		agenda.close()
+		return(True)
+	else: 
+		print ("Digite um telefone com mais de 8 digitos")
+		return(False)	
 def listar():
 	print("Lista de Contatos")
 	agenda = open("agendatelefonica.csv")
@@ -52,4 +57,5 @@ def remover ():
 
 
 def falha():
-	print("Opcao Incorreta")
+	falha="opcao incorreta"
+	print(falha)

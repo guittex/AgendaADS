@@ -11,7 +11,12 @@ while n != '9':
 
         # Estrutura de controle
         if opcao == 1:
-                funcoes.adicionar()
+                print("Adicionar um registro")
+                nome=str(input("Nome do Contato: "))
+                telefone=str(input("Digite o telefone: "))
+                funcoes.adicionar(nome,telefone)
+               
+                
         elif opcao == 2:
                 funcoes.listar()
         elif opcao == 3:
